@@ -31,6 +31,8 @@ RUN bash /works/scripts/install-tools-java.sh
 RUN cd /works/scripts && \
 	bash install-vscode-extensions.sh ./extensions.list
 
+WORKDIR /works/app
+
 EXPOSE 8080
 
 CMD [ "/works/code-server", "." , "--bind-addr", "0.0.0.0:8080" ,"--locale=ja" ]

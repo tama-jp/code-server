@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo install golang
+
 export GOVERSION=1.18.2
 export ARCH=amd64
 export GOPATH=/usr/local/go-packages

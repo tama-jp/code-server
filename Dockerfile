@@ -20,9 +20,6 @@ RUN apt update && \
 	apt install -y locales && \
 	locale-gen ja_JP.UTF-8
 
-RUN cd /works/scripts && \
-	sh install-vscode-extensions.sh ./extensions.list
-
 # Install langauge toolchains
 RUN sh /works/scripts/install-tools-nodejs.sh
 RUN sh /works/scripts/install-tools-dev.sh
@@ -30,6 +27,10 @@ RUN sh /works/scripts/install-tools-golang.sh
 RUN sh /works/scripts/install-tools-cpp.sh
 RUN sh /works/scripts/install-tools-python.sh
 RUN sh /works/scripts/install-tools-java.sh
+
+RUN cd /works/scripts && \
+	sh install-vscode-extensions.sh ./extensions.list
+
 
 EXPOSE 8080
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo install node.js
 
@@ -12,7 +12,7 @@ echo install node.js
 #apt-get update && apt-get install -y yarn nodejs
 
 curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs
+    apt install -y nodejs
 
 # code-server を取得するのに wget を install しておく
-apt-get install -y wget
+apt install -y wget

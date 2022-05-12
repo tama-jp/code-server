@@ -21,16 +21,15 @@ RUN apt update && \
 	locale-gen ja_JP.UTF-8
 
 # Install langauge toolchains
-RUN sh /works/scripts/install-tools-nodejs.sh
-RUN sh /works/scripts/install-tools-dev.sh
-RUN sh /works/scripts/install-tools-golang.sh
-RUN sh /works/scripts/install-tools-cpp.sh
-RUN sh /works/scripts/install-tools-python.sh
-RUN sh /works/scripts/install-tools-java.sh
+RUN bash /works/scripts/install-tools-nodejs.sh
+RUN bash /works/scripts/install-tools-dev.sh
+RUN bash /works/scripts/install-tools-golang.sh
+RUN bash /works/scripts/install-tools-cpp.sh
+RUN bash /works/scripts/install-tools-python.sh
+RUN bash /works/scripts/install-tools-java.sh
 
 RUN cd /works/scripts && \
-	sh install-vscode-extensions.sh ./extensions.list
-
+	bash install-vscode-extensions.sh ./extensions.list
 
 EXPOSE 8080
 

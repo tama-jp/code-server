@@ -1,0 +1,18 @@
+# Compose fileのバージョン指定
+version: "3.7"
+
+# コンテンツ
+services:
+# ---------------------------------------------------
+#  code-server
+# ---------------------------------------------------
+  code-server:
+    container_name: "code-server"
+    build:
+      context: .
+    volumes:
+      - ./data/code-server/app:/works/app
+    ports:
+      - "8080:8080"
+    environment:
+      PASSWORD: "password"  # パスワード設定

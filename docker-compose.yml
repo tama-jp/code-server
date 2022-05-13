@@ -8,6 +8,7 @@ services:
 # ---------------------------------------------------
   code-server:
     container_name: "code-server"
+#    image: tamatan/code-server:v202205131545-g1.18.2-p3.10.4-n18.1.0-java-cpp
     build:
       context: .
     volumes:

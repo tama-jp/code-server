@@ -1,5 +1,4 @@
-#FROM debian:bullseye-20220509-slim
-FROM tamatan/go-python-node-java-cpp:v-gpnjc-202205131500-g1.18.2-p3.10.4-n18.1.0-java-cpp
+tamatan/go-python-node-java-cpp:v-gpnjc-202205152300-g1.18.2-p3.10.4-n18.1.0-java-cpp
 # 作業ディレクトリを /works にする
 WORKDIR /works
 

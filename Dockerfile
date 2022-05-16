@@ -1,4 +1,4 @@
-FROM tamatan/go-python-node-java-cpp:v-gpnjc-202205152300-g1.18.2-p3.10.4-n18.1.0-java-cpp
+FROM tamatan/go-python-node-java-cpp:v-gpnjc-202205161000-g1.18.2-p3.10.4-n18.1.0-j11-cpp
 # 作業ディレクトリを /works にする
 WORKDIR /works
 

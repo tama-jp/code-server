@@ -8,7 +8,7 @@ RUN apt update -y
 RUN apt install -y wget
 
 #
-ENV CODE_SERVER_VERSION 4.4.0
+ENV CODE_SERVER_VERSION 4.5.1
 # code-server のバイナリーを取得
 RUN wget https://github.com/coder/code-server/releases/download/v${CODE_SERVER_VERSION}/code-server-${CODE_SERVER_VERSION}-linux-amd64.tar.gz
 # code-server を /works 配下に解凍する
